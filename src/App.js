@@ -19,7 +19,7 @@ function App() {
       <header className="App-header">
           <div className="box">
               <div className="arr">
-                  <ShowCase title="sort()" defaultArray={example} params={[() => null]} />
+                  <ShowCase title="sort()" defaultArray={example2} params={[() => null]} />
               </div>
           </div>
         <div className="box">
