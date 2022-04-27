@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import alphaNumericSort from './alphaNumericSort'
+// import alphaNumericSort from './alphaNumericSort';
+import alphaNumericCollator from './alphanumericCollator'
 import './App.css';
 
 const ShowCase = ({ title, input, defaultArray = [] }) => {
@@ -23,7 +24,7 @@ const ShowCase = ({ title, input, defaultArray = [] }) => {
             <h3>Output</h3>
             <div className="arr-result">
                 <h2>Array with sorting:</h2>
-                <p className="result">{alphaNumericSort(inputArray)}</p>
+                <p className="result">{alphaNumericCollator(inputArray)}</p>
             </div>
         </>
     );
