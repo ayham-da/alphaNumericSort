@@ -1,5 +1,6 @@
 import './App.css';
 import alphaNumericSort from './alphaNumericSort'
+import ShowCase from "./show";
 
 function App() {
     const arr = [" person1   /"," person10   /","person11   /"," person12   /"," person13   /"," person14   /"," person15   /"," person2   /"," person3   /"," person4   /"," person5   /"," person6   /"," person7   /"," person8   /"," person9   /"];
@@ -15,6 +16,11 @@ function App() {
     return (
     <div className="App">
       <header className="App-header">
+          <div className="box">
+              <div className="arr">
+                  <ShowCase title="sort()" defaultArray={example} params={[() => null]} />
+              </div>
+          </div>
         <div className="box">
             <div className="arr">
                 <h2>Array without sorting:</h2>
@@ -35,6 +41,7 @@ function App() {
                 <p>{example2}</p>
             </div>
           </div>
+
       </header>
       <body className="App-header">
       </body>
